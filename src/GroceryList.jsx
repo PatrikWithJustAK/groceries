@@ -3,13 +3,11 @@ import GroceryItem from './GroceryItem';
 
 const GroceryList = ({ items, onRemoveItem }) => {
   return (
-    <div className= "grid grid-cols-3 justify-center">
       <ul>
-        {items.map((item, index) => (
-          <GroceryItem key={index} item={item} onRemoveItem={onRemoveItem} />
+        {items.map((item =>
+          <GroceryItem key={item.itemtext} item={item.itemtext} quantity={item.quantity} onRemoveItem={onRemoveItem} />
         ))}
       </ul>
-    </div>
   );
 };
 
