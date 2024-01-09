@@ -2,7 +2,7 @@
 
 const GroceryItem = ({ item, quantity, onRemoveItem, }) => {
   return (
-    <div className="grid col-span-1 col-start-2">
+    <div className="grid col-span-1 col-start-2" id={item.id}>
       <li>
         <p>
             {item} x

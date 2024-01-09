@@ -5,7 +5,7 @@ const GroceryList = ({ items, onRemoveItem }) => {
   return (
       <ul>
         {items.map((item =>
-          <GroceryItem key={item.itemtext} item={item.itemtext} quantity={item.quantity} onRemoveItem={onRemoveItem} />
+          <GroceryItem key={item.id} item={item.itemtext} quantity={item.quantity} onRemoveItem={onRemoveItem} />
         ))}
       </ul>
   );

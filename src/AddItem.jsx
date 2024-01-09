@@ -16,7 +16,7 @@ const AddItem = ({ onAddItem }) => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button className = "text-green-900 border rounded p-1 m-1 border-green-900" type="submit">Add</button>
+      <button className = "text-green-900 border rounded p-1 m-1  border-green-900 hover:bg-green-600" type="submit">Add</button>
     </form>
   );
 };
